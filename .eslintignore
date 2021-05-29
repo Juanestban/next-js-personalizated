@@ -1,0 +1,9 @@
+.next
+node_modules
+.eslintcache
+.prettierignore
+.vscode
+coverage
+babel-config.js
+package.json
+next.config.js
