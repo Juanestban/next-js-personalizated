@@ -6,4 +6,3 @@ node_modules
 coverage
 babel-config.js
 package.json
-next.config.js
