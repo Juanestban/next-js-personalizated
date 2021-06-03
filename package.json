@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "test": "jest ",
     "jest:w": "jest --watchAll",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "coverage:out": "jest --coverage --outputFile"
   },
   "keywords": [],
   "author": "",
