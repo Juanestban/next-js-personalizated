@@ -4,6 +4,9 @@ pipeline {
       image "node:14.12-alpine"
     }
   }
+  triggers {
+    pollSCM '* * * * *'
+  }
   stages {
     stage("install packages") {
       steps {
