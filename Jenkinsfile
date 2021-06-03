@@ -5,6 +5,23 @@ pipeline {
     }
   }
   stages {
+    stage("install packages") {
+      steps {
+        echo "========executing install packages========"
+        sh "npm i"
+      }
+      post {
+          always {
+              echo "========always========"
+          }
+          success {
+              echo "========install packages executed successfully========"
+          }
+          failure {
+              echo "========install packages execution failed========"
+          }
+      }
+    }
     stage("test") {
       steps {
         echo "========executing test========"
