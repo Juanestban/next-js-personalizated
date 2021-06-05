@@ -4,6 +4,5 @@ node_modules
 .eslintcache
 .vscode
 coverage
-babel-config.js
+babel.config.js
 package.json
-next.config.js
