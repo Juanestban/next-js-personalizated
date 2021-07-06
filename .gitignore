@@ -8,7 +8,7 @@
 
 # env api url
 .env
-
+.env.local
 # test jest
 coverage
 test_reports

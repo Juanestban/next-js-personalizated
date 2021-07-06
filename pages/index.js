@@ -1,11 +1,24 @@
+import Head from 'next/head'
+import { NodeEnvState } from '@config/nodeEnv'
+import { URL_API } from '@config/urlsApi'
+
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Reindustrias - Inicio</title>
+      </Head>
       <h1>hello world</h1>
-      <h3>env produccion: {process.env.production}</h3>
-      <h3>environment: {process.env.NODE_ENV}</h3>
-      <h3>env local: {process.env.local}</h3>
-      <p>testing pre-commit</p>
+      <p>{NodeEnvState}</p>
+      <p>{URL_API}</p>
     </>
   )
+}
+
+export async function getStaticProps() {
+  console.log('[+] NODE_ENV:', process.env.NODE_)
+  console.log('[+] urlApi:', process.env.URL_API)
+  console.log('[+] local urlApi:', process.env.local)
+
+  return { props: {} }
 }
