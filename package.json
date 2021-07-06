@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "next",
-    "dev": "next dev",
+    "start": "NODE_=production next",
+    "dev": "NODE_=development next dev",
+    "dev:test": "NODE_=test next dev",
     "build": "next build",
+    "build:start": "npm run build && npm start",
     "prepare": "husky install",
     "test": "jest ",
     "jest:w": "jest --watchAll",
