@@ -10,7 +10,8 @@
       "@contexts/*": ["contexts/*"],
       "@models/*": ["models/*"],
       "@services/*": ["services/*"],
-      "@lang/*": ["lang/*"]
+      "@lang/*": ["lang/*"],
+      "@styles/*": ["styles/*"]
     }
   }
 }

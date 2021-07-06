@@ -18,6 +18,7 @@ export default function Index() {
 export async function getStaticProps() {
   console.log('[+] NODE_ENV:', process.env.NODE_)
   console.log('[+] urlApi:', process.env.URL_API)
+  console.log('[+] local urlApi:', process.env.local)
 
   return { props: {} }
 }
