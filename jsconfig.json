@@ -9,7 +9,8 @@
       "@public/*": ["public/*"],
       "@contexts/*": ["contexts/*"],
       "@models/*": ["models/*"],
-      "@services/*": ["services/*"]
+      "@services/*": ["services/*"],
+      "@lang/*": ["lang/*"]
     }
   }
 }
